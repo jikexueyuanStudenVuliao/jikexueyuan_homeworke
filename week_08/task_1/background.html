@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .container {
+        width: 50%;
+    }
+    
+    .newsform {
+        margin-top: 15px;
+    }
+    
+    .newsform label {
+        display: inline-block;
+        width: 100px;
+    }
+    
+    table {
+        margin: 60px auto;
+    }
+    
+    th,
+    td {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100%;
+    }
+    
+    .newsbtn {
+        padding-left: 60px;
+    }
+    
+    .newsbtn div {
+        margin-right: 30px;
+        display: inline-block;
+        height: 22px;
+        width: 50px;
+        background-color: green;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .tdDiv span{
+    	display: inline-block;
+    }
+    .deleteRow{
+    	/*margin-right: 30px;*/
+		margin: 0 auto;
+        height: 22px;
+        width: 50px;
+        background-color: red;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        /*margin-top: 20px;*/
+    }
+    .tdDiv{
+    	display: inline-block;
+    	height: 100%;
+    	width: 100%;
+    	padding-top: 30%;
+       	text-align: center;
+       	border-top: 1px solid #dddddd;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="newsform">
+                <label for="newsId">newId</label>
+                <input type="text" id="newsId" />
+            </div>
+            <div class="newsform">
+                <label for="newsTitle">newsTitle</label>
+                <input type="text" id="newsTitle" />
+            </div>
+            <div class="newsform">
+                <label for="newsContent">newsContent</label>
+                <input type="text" id="newsContent" />
+            </div>
+            <div class="newsbtn">
+                <div id="add">增加</div>
+                <div id="modify">修改</div>
+            </div>
+        </form>
+        <table class="table table-bordered" id="showTable">
+            <thead>
+                <tr>
+                    <th>newsId</th>
+                    <th>newsTitle</th>
+                    <th>newsContent</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/background.js"></script>
+    <script type="text/javascript">
+    
+    </script>
+</body>
+
+</html>
