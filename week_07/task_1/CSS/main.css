@@ -1,0 +1,235 @@
+html {
+    display: block;
+    height: 100%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    background:  url(../images/65.jpg)   no-repeat;
+    background-size: cover;
+   
+}
+.dn {
+    display: none;
+}
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+.oh {
+    overflow: hidden;
+}
+#header {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    /*position: relative;*/
+    z-index: 20;
+   	background: rgba(30,30,30,.3);
+}
+
+.weatherIcon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.city{
+	margin-left: 12px;
+}
+.wI1 {
+    background: url('../images/a1.png');
+}
+
+ul a{
+	float: left;
+	color: #fff;
+	margin: 0 10px;
+}
+
+.headNavs{
+	font-weight: bold;
+}
+
+#showmore{
+	margin: 0;
+	text-align: center;
+	width: 90px;
+	background-color: #398BFB;
+
+}
+.showmoreList {
+	position: absolute;
+	right: 0;
+	top: 35px;
+	text-align: center;
+	width: 90px;
+	height: 100%;
+	background-color: #f9f9f9;
+
+}
+.showmoreList a{
+	 display: block;
+    text-align: center;
+    width: 66px;
+    height: 76px;
+    margin: 0 12px;
+    font-size: 12px;
+    border-bottom: #f0f0f0 1px solid;
+    color: #666;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    line-height: 14px;
+}
+.showmoreList img{
+	    display: block;
+    height: 36px;
+    width: auto;
+    margin: 10px auto 5px;
+    cursor: pointer;
+}
+.logo{
+	display: inline-block;
+	width: 100%;
+	height: 210px;
+}
+.logo img{
+	display: block;
+	/*width="270" height="129"*/
+	width: 340px;
+
+	margin:50px auto 0;
+}
+
+
+#content form{
+	width: 100%;
+	margin:0 auto;
+}
+
+.searchBar{
+	width: 660px;
+	margin:0 auto;
+}
+
+form .searchIpt{
+	display: inline-block;
+	float: left;
+	width: 535px;
+	height:36px;
+	font-size: 16px ; 
+}
+
+.searchBtn{
+	display: inline-block;
+	float: left;
+	margin-left: -1px;
+	width: 100px;
+	height: 40px;
+	font-size: 16px ;
+	cursor: pointer; 
+    border: 1px solid #989898;
+}
+
+.mainContents{
+	clear: both;
+	width: 900px;
+	height: 370px;
+	margin:120px auto 0;
+	font-size: 16px ;
+	background: rgba(255,255,255,0.8);
+}
+
+
+.mainNav{
+	border-bottom: 1px solid #C3C0C0;
+	height: 40px;
+}
+
+.mainNav a{
+	color: #000;
+	color: black;
+	float: left;
+	height: 40px;
+	padding: 0 20px;
+	margin:0;
+	line-height: 40px;
+}
+.active{
+	background: rgba(17,27,56,.3) repeat-x;
+}
+
+.navSet{
+	margin-top: 15px;
+	margin-left: 50px;
+}
+
+.navArea {
+	margin-top: 15px;
+    
+}
+
+.navArea a {
+    width: 114px;
+    height: 69px;
+    float: left;
+    display: inline-block;
+    border: 2px solid rgba(248, 248, 248, 0.7);
+    margin: 0 8px 12px 0;
+    background: #f8f8f8;
+    background: linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;
+    background: -moz-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;
+    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;
+    background: -o-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;
+}
+
+.navArea a:hover {
+    border: 2px solid #42A0FE;
+}
+
+.myVideo img{
+	padding:5px;
+	float: left;
+}
+
+#back-to-top{  
+    position:fixed;  
+    display:none;  
+    bottom:60px;  
+    right:80px;  
+}  
+#back-to-top a{  
+    text-align:center;  
+    text-decoration:none;  
+    color:#d1d1d1;  
+    display:block;  
+    width:33px;  
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/  
+    -moz-transition:color 1s;  
+    -webkit-transition:color 1s;  
+    -o-transition:color 1s;  
+}  
+#back-to-top a:hover{  
+    color:#979797;  
+}  
+#back-to-top a span{  
+    background:url(../images/top.png) no-repeat -1px -10px;  
+    border-radius:6px;  
+    display:block;  
+    height:17px;  
+    width:33px;  
+    margin-bottom:5px;  
+    /*使用CSS3中的transition属性给<span>标签背景颜色添加渐变效果*/  
+    -moz-transition:background 1s;  
+    -webkit-transition:background 1s;  
+    -o-transition:background 1s;  
+}  
+
+
+
