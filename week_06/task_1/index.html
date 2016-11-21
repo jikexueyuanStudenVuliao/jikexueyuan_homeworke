@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="button.css" />
+	<script type="text/javascript" src="calculate.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>网页计算器</h2>
+        <form name="calculator" action="" method="get"> 
+        <div class="num_content">
+            <h3><input id="input1" name="numScreen" type="text" value="0"  onfocus="this.blur();"/></h3>
+            <span id="note"></span> 
+            <ul>
+                <li class="button orange" title="删除一个" onclick="del()">Dle</li>
+                <li class="button orange" title="将显示数字清空" onclick="clearscreen()">C</li>
+                <li class="button blue" onclick="sin()">sin</li>
+                <li class="button blue" onclick="cos()">cos</li>
+                <li class="button blue" onclick="tan()">tan</li>
+                <li class="button" onclick="command(7)">7</li>
+                <li class="button" onclick="command(8)">8</li>
+                <li class="button" onclick="command(9)">9</li>
+                <li class="button green" onclick="plus()">+</li>
+                <li class="button Deep_blue" onclick="MySqrt()">√￣</li>
+                <li class="button"  onclick="command(4)">4</li>
+                <li class="button" onclick="command(5)">5</li>
+                <li class="button" onclick="command(6)">6</li>
+                <li class="button green" onclick="minus()">-</li>
+                <li class="button Deep_blue" onclick="inverse()">1/x</li>
+                <li class="button"  onclick="command(1)">1</li>
+                <li class="button" onclick="command(2)">2</li>
+                <li class="button" onclick="command(3)">3</li>
+                <li class="button green" onclick="times()">×</li>
+                <li class="button Deep_blue equal" onclick="equal()">=</li>
+                <li class="button num0" onclick="command(0)">0</li>
+                <li class="button" onclick="dot()">.</li>
+                <li class="button green" onclick="divide()">÷</li>
+            </ul>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>

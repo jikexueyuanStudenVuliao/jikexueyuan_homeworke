@@ -1,0 +1,356 @@
+.container {
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px auto;
+    border: #fff 1px solid;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+/*the screen*/
+input {
+    border: 1px solid #b7b7b7;
+    width: 600px;
+    height: 60px;
+    line-height: 40px;
+    padding: 0 10px;
+    text-align: right;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px auto;
+    -moz-box-shadow: inset 5px 5px 10px #BFC5CC;
+    -webkit-box-shadow: inset 5px 5px 10px #BFC5CC;
+    box-shadow: inset 5px 5px 10px #BFC5CC;
+}
+
+span#note {
+    width: 210px;
+    height: auto;
+    overflow: hidden;
+    color: red;
+}
+
+.num_content ul {
+    padding: 0;
+    margin: 5px 14px;
+    border: #fff 1px solid;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    list-style-type: disc;
+    position: relative;
+    font-size: 25px;
+}
+
+.num_content li {
+    list-style: none;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    font-weight: bold;
+    background-color: #eaeaea;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    /*margin: 10px 10px 4px 10px;*/
+}
+
+ul .num0 {
+    width: 215px;
+}
+
+ul .equal {
+    position: absolute;
+    height: 150px;
+    line-height: 150px;
+    bottom: 0;
+    right: 5px;
+}
+
+
+/*usual set */
+
+.button {
+    text-decoration: none;
+    font: 24px/1em 'Droid Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    /* layout */
+    padding: .5em .6em .4em .6em;
+    margin: .5em;
+    display: inline-block;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    /* effects */
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+    /* color */
+    color: hsl(0, 0%, 40%) !important;
+    background-color: hsl(0, 0%, 75%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(0, 0%, 60%) 0 .1em 3px, hsl(0, 0%, 45%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    behavior: url(ie-css3.htc);
+}
+
+
+button.button {
+    border-left: none;
+    border-right: none;
+}
+
+button.button:hover {
+    cursor: pointer;
+}
+
+.button:before {
+    font: 1.2em/0 sans-serif;
+    content: attr(data-icon);
+    margin-right: 6px;
+}
+
+
+.button.orange {
+    color: hsl(39, 100%, 30%) !important;
+    background-color: hsl(39, 100%, 50%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(39, 100%, 40%) 0 .1em 3px, hsl(39, 100%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    behavior: url(ie-css3.htc);
+}
+
+.button.orange:hover {
+    background-color: hsl(39, 100%, 65%);
+}
+
+.button.blue {
+    color: hsl(208, 50%, 40%) !important;
+    background-color: hsl(208, 100%, 75%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(208, 50%, 55%) 0 .1em 3px, hsl(208, 50%, 40%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    behavior: url(ie-css3.htc);
+}
+
+.button.blue:hover {
+    background-color: hsl(208, 100%, 83%);
+}
+
+.button.green {
+    color: hsl(88, 70%, 30%) !important;
+    background-color: hsl(88, 70%, 60%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(88, 70%, 40%) 0 .1em 3px, hsl(88, 70%, 30%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    behavior: url(ie-css3.htc);
+    /* drop shadow */
+}
+
+.button.green:hover {
+    background-color: hsl(88, 70%, 75%);
+}
+
+.button.Deep_blue {
+    color: hsl(340, 100%, 30%) !important;
+    background-color: hsl(232, 54%, 42%);
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(340, 70%, 50%) 0 .1em 3px, hsl(340, 80%, 40%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(340, 70%, 50%) 0 .1em 3px, hsl(340, 80%, 40%) 0 .3em 1px, /* color border */
+    rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.15) 0 -0.1em .3em, /* inner shadow */
+    hsl(216, 64%, 53%) 0 .1em 3px, hsl(224, 45%, 39%) 0 .3em 1px, rgba(0, 0, 0, 0.2) 0 .5em 5px;
+    /* drop shadow */
+    behavior: url(ie-css3.htc);
+}
+
+.button.Deep_blue:hover {
+    background-color: hsl(232, 54%, 55%);
+}
+
+.button.transparent {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.button.transparent,
+.button.transparent:hover,
+.button.transparent:active {
+    background-color: transparent;
+    background-image: none;
+}
+
+.button.transparent:hover {
+    opacity: .9;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 83%);
+}
+
+.button:active {
+    background-image: -webkit-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0)));
+    background-image: -moz-gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0)));
+    background-image: gradient(radial, 50% 0, 100, 50% 0, 0, from( rgba(255, 255, 255, 0)), to( rgba(255, 255, 255, 0)));
+    -webkit-box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 255, 255, 0.6) 0 0.3em .3em, inset rgba(0, 0, 0, 0.2) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.4) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    -webkit-transform: translateY(.2em);
+    -moz-transform: translateY(.2em);
+    transform: translateY(.2em);
+}
+
+.button:focus {
+    outline: none;
+    color: rgba(254, 255, 255, 0.9) !important;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px;
+}
+
+.button[disabled],
+.button[disabled]:hover,
+.button.disabled,
+.button.disabled:hover {
+    opacity: .5;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.2) !important;
+    text-shadow: none !important;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: none;
+    border-top: none;
+    -webkit-box-shadow: inset rgba(255, 254, 255, 0.4) 0 0.3em .3em, inset rgba(0, 0, 0, 0.1) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.3) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    -moz-box-shadow: inset rgba(255, 254, 255, 0.4) 0 0.3em .3em, inset rgba(0, 0, 0, 0.1) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.3) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    box-shadow: inset rgba(255, 254, 255, 0.4) 0 0.3em .3em, inset rgba(0, 0, 0, 0.1) 0 -0.1em .3em, /* inner shadow */
+    rgba(0, 0, 0, 0.3) 0 .1em 1px, /* border */
+    rgba(0, 0, 0, 0.2) 0 .2em 6px;
+    /* drop shadow */
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+
+/* -------------- Fonts -------------- */
+
+.serif {
+    font-family: 'Lobster', serif;
+    font-weight: normal;
+}
+
+
+/* -------------- Sizes -------------- */
+
+.xs {
+    font-size: 25px;
+}
+
+.xl {
+    font-size: 32px;
+}
+
+
+/* -------------- Materials -------------- */
+
+.button.glossy:after,
+.button.glass:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    top: 0;
+    left: 5%;
+    -webkit-border-radius: .5em .5em 1em 1em / .5em .5em 2em 2em;
+    -moz-border-radius: .5em .5em 1em 1em / .5em .5em 2em 2em;
+    border-radius: .5em .5em 1em 1em / .5em .5em 2em 2em;
+    background-image: -webkit-gradient(linear, 0% 0, 100% 0, from( rgba(255, 255, 255, .55)), to( rgba(255, 255, 255, .5)), color-stop(.5, rgba(255, 255, 255, 0)), color-stop(.8, rgba(255, 255, 255, 0)));
+    background-image: -moz-linear-gradient(left, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, .5));
+    background-image: gradient(linear, 0% 0, 100% 0, from( rgba(255, 255, 255, .55)), to( rgba(255, 255, 255, .5)), color-stop(.5, rgba(255, 255, 255, 0)), color-stop(.8, rgba(255, 255, 255, 0)));
+}
+
+.button.glossy:active:after,
+.button.glass:active:after,
+.button.disabled:after,
+.button[disabled]:after {
+    opacity: .6;
+}
+
+.button.icon.glossy:after,
+.button.icon.glass:after {
+    height: 75%;
+}
+
+
+/* -------------- Glass + Transparent -------------- */
+
+.button.glass {
+    text-shadow: rgba(255, 255, 255, .5) 0 -1px 0, rgba(0, 0, 0, 0.18) 0 .18em .15em;
+}
+
+.button.glass:active {
+    text-shadow: rgba(255, 255, 255, .3) 0 1px 0, rgba(0, 0, 0, 0.15) 0 .18em .15em;
+}
+
+
+/* -------------- Shapes -------------- */
