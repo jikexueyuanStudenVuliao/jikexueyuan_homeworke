@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap测试</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" role="search">
+                 <div class="dropdown form-group">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Dropdown
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                   
+                    <button type="submit" class="btn btn-success">Submit</button>
+                   
+                </form>
+
+            </div>
+           <ul class="nav navbar-nav  side-nav ">
+                    <li class="active">
+                        <a href="#"> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"> Charts</a>
+                    </li>
+                    <li>
+                        <a href="#">Tables</a>
+                    </li>
+                    <li>
+                        <a href="#"> Forms</a>
+                    </li>
+                    <li>
+                        <a href="#"> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="#">Bootstrap Grid</a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="collapse" data-target="#demo"> Dropdown </a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="#"> RTL test</a>
+                    </li>
+                </ul>
+            </div>
+           
+            <!-- /.container-fluid -->
+
+    </nav>
+
+   <div class="container wrapper">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Tables
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                 <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                Tables
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Bordered Table</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Visits</th>
+                                        <th>% New Visits</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Bordered with Striped Rows</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Visits</th>
+                                        <th>% New Visits</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+</body>
+
+</html>
