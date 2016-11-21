@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    min-width: 810px;
+    height: 600px;
+    min-height: 200px;
+}
+
+#heading {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#heading a.mnav:hover,
+#heading a.lb:hover,
+#heading a.bri:hover {
+    color: #00c;
+}
+
+#heading a.mnav {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+#heading a.lb {
+    float: left;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+}
+
+#heading a.bri {
+    float: left;
+    color: white;
+    font-size: 13px;
+    line-height: 24px;
+    margin-left: 20px;
+    background: #38f;
+}
+
+#content_body {
+    clear: both;
+    width: 100%;
+    /* height: 600px;*/
+}
+
+.searchIpt {
+    width: 539px;
+    border-color: #b8b8b8;
+    border: 1px solid #b6b6b6;
+    vertical-align: bottom;
+    margin-bottom: 150px;
+    height: 33px;
+    line-height: 33px\9;/*兼容ie*/
+}
+
+.su_btn {
+    width: 100px;
+    height: 35px;
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    margin-left: -8px;
+    /*-----------------*/
+    *margin-left: -5px;
+    /*兼容ie6和ie7*/
+    *margin-top: 1px;
+    /*兼容ie6和ie7  但设置*margin-bottom: 14px;无效*/
+    /*---------------------*/
+    margin-bottom: 150px;
+    /**margin-bottom: 14px;*/
+    cursor: pointer;
+}
+
+.searchIpt:hover {
+    border-color: #999 transparent #b3b3b3 #999
+}
+
+.footer_container {
+    text-align: center;
+    margin-top: 200px \9;
+    /*兼容ie*/
+}
+
+footer {
+    margin-top: 200px;
+    font-size: 14px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#copyright {
+    color: #666;
+    text-decoration: none;
+}
+
+#copyright a {
+    color: #666;
+}

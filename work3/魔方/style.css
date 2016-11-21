@@ -1,0 +1,110 @@
+* {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .box {
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        /*-webkit-perspective:130;*/
+        -webkit-perspective-origin: 25% -40px;
+        -webkit-transform-origin: 80px 80px 0px;
+        -webkit-animation: animations 6s infinite ease-out;
+    }
+    
+    @-webkit-keyframes animations {
+        20% {
+            -webkit-transform: rotateX(-90deg);
+        }
+        40% {
+            -webkit-transform: rotateY(225deg) rotateZ(135deg);
+        }
+        60% {
+            -webkit-transform: rotateY(135deg) rotateZ(135deg);
+        }
+        40% {
+            -webkit-transform: rotateY(-90deg) rotateX(135deg);
+        }
+        80% {
+            -webkit-transform: rotateX(135deg);
+        }
+    }
+    
+    .box .piece {
+        opacity: 0.8;
+        /*background-color: blue;*/
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 70px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 160px;
+        border: 2px solid #000;
+        box-sizing: border-box;
+    }
+    
+    .box span {
+        display: inline-block;
+        float: left;
+        width: 32%;
+        height: 32%;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+    
+    .top span {
+        background-color: red;
+    }
+    
+    .bottom span {
+        background-color: #EA00FF;
+    }
+    
+    .left span {
+        background-color: #FF0044;
+    }
+    
+    .right span {
+        background-color: #00EEFF;
+    }
+    
+    .front span {
+        background-color: #00FF36;
+    }
+    
+    .back span {
+        background-color: #F8FF00;
+    }
+    
+    .top {
+        -webkit-transform: rotateX(90deg) rotateY(0deg) translateZ(80px);
+        /*background-color: blue;*/
+    }
+    
+    .bottom {
+        -webkit-transform: rotateX(-90deg) rotateY(0deg) translateZ(80px);
+        /*background-color: #FF0044;*/
+    }
+    
+    .left {
+        -webkit-transform: rotateX(0deg) rotateY(90deg) translateZ(80px);
+        /*background-color: #00EEFF;*/
+    }
+    
+    .right {
+        -webkit-transform: rotateX(0deg) rotateY(-90deg) translateZ(80px);
+        /*background-color: #00FF36;*/
+    }
+    
+    .front {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) translateZ(80px);
+        /*background-color: #F8FF00;*/
+    }
+    
+    .back {
+        -webkit-transform: rotateX(180deg) rotateY(0deg) translateZ(80px);
+        /*background-color: #EA00FF;*/
+    }

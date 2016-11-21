@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>简笔动画</title>
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        overflow: hidden;
+    }
+    .container {
+        position: relative;
+        min-width: 1000px;
+    }
+    
+    .cloudA {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: -100%;
+        -webkit-animation: animations 5s 2.5s infinite cubic-bezier(0, 0, 0, 0);
+    }
+    
+    .cloudB {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: -100%;
+        -webkit-animation: animations 5s infinite cubic-bezier(0, 0, 0, 0);
+    }
+    
+    .cloudC {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        opacity: 0;
+        -webkit-animation: first_animations 2.5s 1 cubic-bezier(0, 0, 0, 0);
+    }
+    
+    @-webkit-keyframes animations {
+        1% {
+            opacity: 1;
+        }
+        10% {
+            -webkit-transform: translateX(20%);
+        }
+        98% {
+            -webkit-transform: translateX(196%);
+            opacity: 1;
+        }
+        99% {
+            -webkit-transform: translateX(200%);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0%);
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes first_animations {
+        0% {
+            -webkit-transform: translateX(0%);
+            opacity: 1;
+        }
+        10% {
+            -webkit-transform: translateX(10%);
+        }
+        98% {
+            -webkit-transform: translateX(98%);
+            opacity: 1;
+        }
+        99% {
+            -webkit-transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+    
+    .cloud img {
+        display: inline-block;
+        position: absolute;
+        width: 200px;
+        /*-webkit-transform:rotateY(45deg);*/
+    }
+    
+    .cloud1 {
+        top: 0px;
+        left: 10%;
+        -webkit-transform: rotateX(0deg) rotateY(45deg);
+    }
+    
+    .cloud2 {
+        top: 30%;
+        left: 40%;
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+    
+    .cloud3 {
+        top: 30%;
+        left: 60%;
+        -webkit-transform: rotateX(0deg) rotateY(45deg);
+    }
+    
+    .cloud4 {
+        top: 0%;
+        left: 85%;
+        -webkit-transform: rotateX(0deg) rotateY(45deg);
+    }
+    
+    .plane {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        -webkit-animation: plane_animations 2.5s infinite cubic-bezier(0, 0, 0, 0);
+    }
+    
+    .plane img {
+        display: inline-block;
+        width: 200px;
+    }
+    
+    @-webkit-keyframes plane_animations {
+        50% {
+            -webkit-transform: translateY(-100px);
+        }
+        60% {
+            -webkit-transform: translateY(-100px);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cloudA cloud">
+            <img class="cloud1" src="image/cloud.jpg" />
+            <img class="cloud2" src="image/cloud.jpg" />
+            <img class="cloud3" src="image/cloud.jpg" />
+            <img class="cloud4" src="image/cloud.jpg" />
+        </div>
+        <div class="cloudB cloud">
+            <img class="cloud1" src="image/cloud.jpg" />
+            <img class="cloud2" src="image/cloud.jpg" />
+            <img class="cloud3" src="image/cloud.jpg" />
+            <img class="cloud4" src="image/cloud.jpg" />
+        </div>
+        <div class="cloudC cloud">
+            <img class="cloud1" src="image/cloud.jpg" />
+            <img class="cloud2" src="image/cloud.jpg" />
+            <img class="cloud3" src="image/cloud.jpg" />
+            <img class="cloud4" src="image/cloud.jpg" />
+        </div>
+        <div class="plane">
+            <img src="image/plane.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
