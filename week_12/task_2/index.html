@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>高级前端面试题</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style type="text/css">
+    body {
+        background-color: #eff4fb;
+    }
+    
+    .comWidth {
+        width: 70%;
+        /*margin: 20px auto;*/
+    }
+    
+    .theme-showcase {
+        margin-top: 40px;
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">前端面试题</a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#part1">HTML和css部分</a></li>
+                    <li><a href="#part2">js部分</a></li>
+                    <li><a href="#part3">进阶和其他</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container theme-showcase " role="main">
+        <div id='part1' class="comWidth">
+            <div class="page-header ">
+                <h1>HTML和css部分</h1>
+            </div>
+            <div class="page-header ">
+                <h3>1.描述css reset的作用和用途。</h3>
+            </div>
+            <p>Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+            <div class="page-header ">
+                <h3>2.xhtml和html有什么区别</h3>
+            </div>
+            <p>HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言 最主要的不同： XHTML 元素必须被正确地嵌套。 XHTML 元素必须被关闭。 标签名必须用小写字母。 XHTML 文档必须拥有根元素。</p>
+            <div class="page-header ">
+                <h3>3.Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义? </h3>
+            </div>
+            <p>用于声明文档使用那种规范（html/Xhtml）一般为 严格 过度 基于框架的html文档 加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug</p>
+            <div class="page-header ">
+                <h3>4.行内元素有哪些?块级元素有哪些?CSS的盒模型?</h3>
+            </div>
+            <p>块级元素：div p h1 h2 h3 h4 form ul 行内元素: a b br i span input select Css盒模型:内容，border ,margin，padding</p>
+            <div class="page-header ">
+                <h3>5.浏览器标准模式和怪异模式之间的区别是什么?</h3>
+            </div>
+            <p>盒子模型 渲染模式的不同 使用 window.top.document.compatMode 可显示为什么模式</p>
+            <div class="page-header ">
+                <h3>6.Doctype严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?</h3>
+            </div>
+            <p>严格模式：使用此类型的网页，浏览器解析将相对严格，不允许使用任何表现样式的标识和属性，比如在元素中直接使用background-color背景色属性。 混杂模式：浏览器对XHTML的解析较为宽松。允许使用4.01中的标签，但必须符合XHTML的语法。
+            </p>
+            <div class="page-header ">
+                <h3>7.CSS引入的方式有哪些? link和@import的区别是?</h3>
+            </div>
+            <p>CSS引入的方式 在html文档的head部分加入: 在html文档的head部分直接写入css文档。 直接在html标签里写入对这个标签的css控制 测试信息
+            </p>
+        </div>
+        <div id='part2' class="comWidth">
+            <div class="page-header ">
+                <h1>js部分</h1>
+            </div>
+            <div class="page-header ">
+                <h3>1.ajax请求的时候get 和post方式的区别</h3>
+            </div>
+            <p>一个在url后面 一个放在虚拟载体里面 有大小限制 安全问题 应用不同 一个是论坛等只需要请求的，一个是类似修改密码的</p>
+            <div class="page-header ">
+                <h3>2.call和apply的区别</h3>
+            </div>
+            <p>Object.call(this,obj1,obj2,obj3) Object.apply(this,arguments)
+            </p>
+            <div class="page-header ">
+                <h3>3.ajax请求时，如何解释json数据</h3>
+            </div>
+            <p>使用eval parse 鉴于安全性考虑 使用parse更靠谱</p>
+            <div class="page-header ">
+                <h3>4.事件委托是什么</h3>
+            </div>
+            <p>让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
+            <div class="page-header ">
+                <h3>5.什么是闭包?下面这个ul，如何点击每一列的时候alert其index?</h3>
+            </div>
+            <p>闭包是可以包含自由（未绑定）变量的代码块；这些变量不是在这个代码块或者任何全局上下文中定义的，而是在定义代码块的环境中定义。</p>
+        </div>
+        <div id='part3' class="comWidth">
+            <div class="page-header ">
+                <h1>进阶和其他</h1>
+            </div>
+            <div class="page-header ">
+                <h3>1.ajax请求时，如何解释json数据</h3>
+            </div>
+            <p>一个在url后面 一个放在虚拟载体里面 有大小限制 安全问题 应用不同 一个是论坛等只需要请求的，一个是类似修改密码的</p>
+            <div class="page-header ">
+                <h3>2.ajax请求的时候get 和post方式的区别</h3>
+            </div>
+            <p>Object.call(this,obj1,obj2,obj3) Object.apply(this,arguments)
+            </p>
+            <div class="page-header ">
+                <h3>3.call和apply的区别 </h3>
+            </div>
+            <p>使用eval parse 鉴于安全性考虑 使用parse更靠谱</p>
+            <div class="page-header ">
+                <h3>4.事件委托是什么</h3>
+            </div>
+            <p>让利用事件冒泡的原理，让自己的所触发的事件，让他的父元素代替执行！</p>
+            <div class="page-header ">
+                <h3>5.什么是闭包?下面这个ul，如何点击每一列的时候alert其index?</h3>
+            </div>
+            <p>闭包是可以包含自由（未绑定）变量的代码块；这些变量不是在这个代码块或者任何全局上下文中定义的，而是在定义代码块的环境中定义。</p>
+        </div>
+    </div>
+</body>
+
+</html>
